@@ -54,14 +54,14 @@ public class ArixBoxPvP extends JavaPlugin implements Listener, CommandExecutor 
 
         getServer().getPluginManager().registerEvents(this, this);
 
-        String[] cmds = {"kasaayarla", "kasasil", "anahtarver", "duyuru", "bakımaal", "ip", "yardim", "medya", "kurallar", "cekilis", "pv", "pv1", "pv2", "pv3", "pv4", "pv5", "pvsil", "pvbak"};
+        String[] cmds = {"kasaayarla", "kasasil", "anahtarver", "duyuru", "bakimaal", "ip", "yardim", "medya", "kurallar", "cekilis", "pv", "pv1", "pv2", "pv3", "pv4", "pv5", "pvsil", "pvbak"};
         for (String cmd : cmds) {
             if (getCommand(cmd) != null) {
                 getCommand(cmd).setExecutor(this);
             }
         }
 
-        getLogger().info("ArixBoxPvP sistemi Purpur 1.20.1 uzerinde aktif!");
+        getLogger().info("ArixBoxPvP Java 22 / Purpur 1.20.1 üzerinde sorunsuz başlatıldı!");
     }
 
     @Override
@@ -308,7 +308,7 @@ public class ArixBoxPvP extends JavaPlugin implements Listener, CommandExecutor 
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (!(sender instanceof Player) && !label.equalsIgnoreCase("bakımaal")) {
+        if (!(sender instanceof Player) && !label.equalsIgnoreCase("bakimaal")) {
             sender.sendMessage("Bu komut sadece oyuncular içindir.");
             return true;
         }
@@ -379,9 +379,9 @@ public class ArixBoxPvP extends JavaPlugin implements Listener, CommandExecutor 
                 }
                 break;
 
-            case "bakımaal":
+            case "bakimaal":
                 if (args.length < 1) {
-                    sender.sendMessage(color("&cKullanım: /bakımaal <ac/kapat>"));
+                    sender.sendMessage(color("&cKullanım: /bakimaal <ac/kapat>"));
                     return true;
                 }
                 if (args[0].equalsIgnoreCase("ac")) {
@@ -446,5 +446,4 @@ public class ArixBoxPvP extends JavaPlugin implements Listener, CommandExecutor 
                                 online.sendTitle(color("&a&lKAZANAN!"), color("&e&l" + winner.getName()), 10, 100, 20);
                                 online.playSound(online.getLocation(), Sound.UI_TOAST_CHALLENGE_COMPLETE, 1.0f, 1.0f);
                             }
-                            Bukkit.broadcastMessage(color("&8&m--------------------------------------------------"));
- 
+                            Bukkit.broadcastMessage(color("&8&m----------------------------------------
