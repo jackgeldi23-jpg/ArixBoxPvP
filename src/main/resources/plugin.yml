@@ -13,22 +13,30 @@ commands:
     permission: skript.anahtarver
   duyuru:
     permission: op
-  bakımaal:
+  bakimaal:
     permission: op
   ip:
-    aliases: [ip]
+    description: IP adresi
   yardim:
-    aliases: [yardım]
+    description: Yardım menusu
   medya:
+    description: Medya sartlari
   kurallar:
+    description: Kurallar
   cekilis:
     permission: op
   pv:
+    description: Sanal depo
   pv1:
+    description: PV 1
   pv2:
+    description: PV 2
   pv3:
+    description: PV 3
   pv4:
+    description: PV 4
   pv5:
+    description: PV 5
   pvsil:
     permission: op
   pvbak:
