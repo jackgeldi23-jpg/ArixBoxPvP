@@ -1,0 +1,36 @@
+name: ArixBoxPvP
+version: 1.0.0
+main: com.arix.boxpvp.ArixBoxPvP
+api-version: '1.20'
+author: jackgeldi23
+
+commands:
+  kasaayarla:
+    permission: op
+  kasasil:
+    permission: op
+  anahtarver:
+    permission: skript.anahtarver
+  duyuru:
+    permission: op
+  bakımaal:
+    permission: op
+  ip:
+    aliases: [ip]
+  yardim:
+    aliases: [yardım]
+  medya:
+  kurallar:
+  cekilis:
+    permission: op
+  pv:
+  pv1:
+  pv2:
+  pv3:
+  pv4:
+  pv5:
+  pvsil:
+    permission: op
+  pvbak:
+    permission: op
+    
